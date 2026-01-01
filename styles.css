@@ -1,0 +1,97 @@
+/* DeepSeek Text Optimizer 插件样式 */
+
+/* 状态栏样式 */
+.status-bar-item.plugin-deepseek-text-optimizer {
+	cursor: pointer;
+	padding: 2px 6px;
+	border-radius: 3px;
+	transition: background-color 0.2s ease;
+}
+
+.status-bar-item.plugin-deepseek-text-optimizer:hover {
+	background-color: var(--background-modifier-hover);
+}
+
+/* 工具栏按钮样式 */
+.workspace-ribbon .plugin-deepseek-text-optimizer {
+	cursor: pointer;
+	transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.workspace-ribbon .plugin-deepseek-text-optimizer:hover {
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+
+/* 设置面板样式增强 */
+.setting-item-description {
+	color: var(--text-muted);
+	font-size: 0.9em;
+	line-height: 1.4;
+}
+
+/* API Key 输入框样式 */
+.setting-item-control input[type="text"] {
+	width: 100%;
+	font-family: var(--font-monospace);
+	font-size: 0.9em;
+}
+
+/* 下拉菜单样式 */
+.setting-item-control select {
+	width: 100%;
+}
+
+/* 切换开关样式 */
+.setting-item-control .checkbox-container {
+	cursor: pointer;
+}
+
+/* 加载状态提示 */
+.deepseek-loading {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+/* 成功提示样式增强 */
+.notice-container .notice.notice-success {
+	background-color: var(--background-success);
+	color: var(--text-success);
+	border-left: 3px solid var(--text-success);
+}
+
+/* 错误提示样式增强 */
+.notice-container .notice.notice-error {
+	background-color: var(--background-error);
+	color: var(--text-error);
+	border-left: 3px solid var(--text-error);
+}
+
+/* 菜单项样式 */
+.menu-item-icon {
+	margin-right: 8px;
+}
+
+/* 加载状态动画 */
+.status-bar-item.plugin-deepseek-text-optimizer.is-loading {
+	opacity: 0.7;
+	animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+	0%, 100% {
+		opacity: 0.7;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+	.status-bar-item.plugin-deepseek-text-optimizer {
+		font-size: 0.85em;
+		padding: 1px 4px;
+	}
+}
+
