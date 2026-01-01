@@ -1,0 +1,12 @@
+{
+	"id": "deepseek-text-optimizer",
+	"name": "DeepSeek Text Optimizer",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "基于 DeepSeek API 的文本优化、思维启发和 AI 观点咨询插件",
+	"author": "Your Name",
+	"authorUrl": "",
+	"fundingUrl": "",
+	"isDesktopOnly": false
+}
+
